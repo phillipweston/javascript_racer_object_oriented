@@ -1,0 +1,29 @@
+<table class="racer_table">
+<form id="gamedata" action="/game/update" method="post">
+<input type="hidden" name="gameid" value="<%= @game.id %>">
+
+</form>
+<% @game.users.each do |user| %>
+  <tr id="<%= user.name %>">
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <% end %>
+</table>
+<div id="winner"></div>
